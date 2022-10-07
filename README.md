@@ -15,12 +15,6 @@ In this project we:
 
 Since r/Seattle and r/SeattleWA are likely to have very similar users and posts (there are certainly people who participate in both subreddits), it will be challenging to build a model that can perform strong predictions. We will deem our model successful if it can correctly classify which subreddit a post belongs to more than 60% of the time.
 
----
-
-# Data Dictionary
-
-
-
 
 ---
 
