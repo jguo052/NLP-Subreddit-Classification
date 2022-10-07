@@ -27,8 +27,8 @@ Since r/Seattle and r/SeattleWA are likely to have very similar users and posts 
 # Summary
 
 We collected data from nearly 5,000 total posts across the subreddits r/Seattle and r/SeattleWA (~2,500 each) using [pushshift API](https://github.com/pushshift/api). Using regular expressions and `nltk` we cleaned the text data and collected sentiment analysis. With the cleaned text data we used CountVectorizer to obtain word frequencies across each subreddit post. To identify which words best distinguished the two subreddits, for each subreddit we ranked each word by the frequency it appeared in that subreddit. Then we subtracted each words ranking in one subreddit by its ranking in the other. This gave us a metric for seeing which word appeared frequently in one subreddit but not the other. Below we see two visuals showing the words that appeared much more frequently in r/Seattle than r/SeattleWA and vice versa. The primary takeaway was that posts on r/SeattleWA were more likely to have politically Conservative sentiment.
-
-- include two visuals
+![A horizontal bar chart showing word of words found more in r/Seattle](images/more_seattle.png)
+![A horizontal bar chart showing word of words found more in r/SeattleWA](images/more_seattlewa.png)
 
 Next we built several models to classify posts into different subreddits, trying both CountVectorizer and TfidfVectorizer. Ultimately, we landed on StackingClassifier with base models of Random Forest, Gradient Boosting, Logistic Regression, and Multinomial Naive Bayes. This model scored 59% accuracy on the test set
 
