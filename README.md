@@ -58,6 +58,6 @@ We stated that our original goal was an accuracy score exceeding 60%. Unfortunat
 
 For future explorations, I would recommend analyzing words strictly in one subreddit and not the other. In this project, we looked at the top 2,000 words of each subredit and examined the words in common. This completely ignored any words roughly 700 words (350 from each subreddit). Most of these words would likely be uninteresting, but there may be a few illustrative gems.
 
-Other topics we did not thoroughly examine were bi-grams and tri-grams. I looked into these very lightly, but not of the work was led to anything deep enough to include in the project. There may be some insights to draw here.
+Other topics we did not thoroughly examine were bi-grams and tri-grams. I looked into these very lightly, but none of the work led to anything deep enough to include in the project. There may be some insights to draw here with further exploration.
 
-And finally, we never used comment data in our analysis. Because these subreddits share many of the same users, identical posts certainly appear on both subreddits occassionally. It could be interesting to identify examples of such posts and analyze how the comment data differ from one subreddit to the other.
+Finally, we never used comment data in our analysis. Because these subreddits share many of the same users, identical posts certainly appear on both subreddits occassionally. It could be interesting to identify examples of such posts and analyze how the comment data differs from one subreddit to the other.
